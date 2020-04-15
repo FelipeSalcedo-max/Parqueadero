@@ -229,11 +229,11 @@ public class PanelListarVehiculos extends javax.swing.JPanel {
         if (rbEnParq.isSelected()) {
             estado = "Disponible";
         }
-        if (dcFechaBusqueda.getDate() != null) {
+       /* if (dcFechaBusqueda.getDate() != null) {
             DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             Date date = dcFechaBusqueda.getDate();
             fecha = dateFormat.format(date);
-        }
+        }*/
 
         try {
             // TODO add your handling code here:

@@ -5,9 +5,10 @@
  */
 package laboratorio3;
 
-import Laboratorio3.PanelIngresarVehiculo;
-import Laboratorio3.PanelListarVehiculos;
-import Laboratorio3.PanelRetirarVehiculo;
+import laboratorio3.PanelIngresarVehiculo;
+import laboratorio3.PanelListarVehiculos;
+import laboratorio3.PanelRetirarVehiculo;
+
 
 
 
