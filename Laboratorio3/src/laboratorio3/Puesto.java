@@ -10,6 +10,7 @@ public class Puesto {
     private int numero;
     private String estado;
     private Carro carro;
+    private moto moto;
     
     public Puesto(int numero){
         this.numero = numero;
