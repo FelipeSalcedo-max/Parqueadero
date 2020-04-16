@@ -10,38 +10,38 @@ package laboratorio3;
  * @author RetailAdmin
  */
 public class Bicicleta {
-    private int NUMERO;
-    private String hora;
-    private String minuto;
+    private String NUMERO;
+    private String horab;
+    private String minutob;
 
-    public Bicicleta(int NUMERO, String hora, String minuto){
+    public Bicicleta(String NUMERO, String horab, String minutob){
         this.NUMERO = NUMERO;
-        this.hora = hora;
-        this.minuto = minuto;
+        this.horab = horab;
+        this.minutob = minutob;
     }
     
-    public int getnumero() {
+    public String getNUMERO() {
         return NUMERO;
     }
 
-    public void setnumero(int NUMERO) {
+    public void setNUMERO(String NUMERO) {
         this.NUMERO = NUMERO;
     }
 
-    public String getHora() {
-        return hora;
+    public String getHorab() {
+        return horab;
     }
 
-    public void setHora(String hora) {
-        this.hora = hora;
+    public void setHorab(String horab) {
+        this.horab = horab;
     }
 
-    public String getMinuto() {
-        return minuto;
+    public String getMinutob() {
+        return minutob;
     }
 
-    public void setMinuto(String minuto) {
-        this.minuto = minuto;
+    public void setMinutob(String minutob) {
+        this.minutob = minutob;
     }
     
 }
