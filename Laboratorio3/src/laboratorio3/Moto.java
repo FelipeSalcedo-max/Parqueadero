@@ -10,37 +10,37 @@ package laboratorio3;
  * @author RetailAdmin
  */
 public class Moto {
-    private String Placa;
-    private String hora;
-    private String minuto;
+    private String Placam;
+    private String horam;
+    private String minutom;
 
-    public Moto(String placa, String hora, String minuto){
-        this.Placa = Placa;
-        this.hora = hora;
-        this.minuto = minuto;
+    public Moto(String Placam, String horam, String minutom){
+        this.Placam = Placam;
+        this.horam = horam;
+        this.minutom = minutom;
     }
     
-    public String getPlaca() {
-        return Placa;
+    public String getPlacam() {
+        return Placam;
     }
 
     public void setPlaca(String Placa) {
-        this.Placa = Placa;
+        this.Placam = Placam;
     }
 
-    public String getHora() {
-        return hora;
+    public String getHoram() {
+        return horam;
     }
 
     public void setHora(String hora) {
-        this.hora = hora;
+        this.horam = horam;
     }
 
-    public String getMinuto() {
-        return minuto;
+    public String getMinutom() {
+        return minutom;
     }
 
-    public void setMinuto(String minuto) {
-        this.minuto = minuto;
+    public void setMinutom(String minutom) {
+        this.minutom = minutom;
     }
 }
