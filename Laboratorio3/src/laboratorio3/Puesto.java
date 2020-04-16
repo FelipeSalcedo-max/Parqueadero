@@ -18,13 +18,14 @@ public class Puesto {
         this.estado = "Libre";
     }
     
-    public void asignarPuesto(Carro carro){
+    public void asignarPuestoc(Carro carro){
         this.carro = carro;
+        
     }
-    public void asignarPuesto(Moto moto){
+    public void asignarPuestom(Moto moto){
         this.moto = moto;
     }
-    public void asignarPuesto(Bicicleta bicicleta){
+    public void asignarPuestob(Bicicleta bicicleta){
         this.bicicleta = bicicleta;
     }
     public int getNumero() {
@@ -46,17 +47,17 @@ public class Puesto {
     public Carro getCarro() {
         return carro;
     }
-    public Moto getMoto() {
-        return moto;
-    }
-    public Bicicleta getBicicleta() {
-        return bicicleta;
-    }
     public void setCarro(Carro carro) {
         this.carro = carro;
     }
+    public Moto getMoto() {
+        return moto;
+    }
     public void setMoto(Moto moto) {
         this.moto = moto;
+    }
+    public Bicicleta getBicicleta() {
+        return bicicleta;
     }
     public void setBicicleta(Bicicleta bicicleta) {
         this.bicicleta = bicicleta;
@@ -67,12 +68,11 @@ public class Puesto {
     }
     
     public String toString(){
+        
+        
         return "Puesto: "+this.getNumero()
             +"\nEstado: "+this.getEstado()
-            +"\nPlaca del carro: "+this.getCarro().getPlaca()
-            +"\nPlaca de la moto: "+this.getMoto().getPlaca()
+            +"\nPlaca del vehiculo: "+this.getCarro().getPlaca()
             +"\nHora: "+this.getCarro().getHora()+":"+this.getCarro().getMinuto();
-            +"\nHora: "+this.getMoto().getHora()+":"+this.getMoto().getMinuto();
-            +"\nHora: "+this.getCarro().getHora()+":"+this.getBicicleta().getMinuto();
     }
 }
