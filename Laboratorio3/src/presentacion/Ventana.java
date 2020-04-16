@@ -70,6 +70,10 @@ public class Ventana {
         return (JOptionPane.showOptionDialog(null, msg, "venmtana", 1, 2, null, null, null));
     }
 
+    public static void imp(String no_hay_puestos_para_parquear_más_carros) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     static class leerInt {
 
         public leerInt() {
