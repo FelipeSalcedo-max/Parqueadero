@@ -10,6 +10,10 @@ package laboratorio3;
  * @author RetailAdmin
  */
 public class Moto {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5bff4f1049a424829f2c39d238d4175ae6d78ab6
     private String Placam;
     private String horam;
     private String minutom;
@@ -43,4 +47,7 @@ public class Moto {
     public void setMinutom(String minutom) {
         this.minutom = minutom;
     }
+=======
+    
+>>>>>>> parent of 74a8bfa... a medio terminar
 }
