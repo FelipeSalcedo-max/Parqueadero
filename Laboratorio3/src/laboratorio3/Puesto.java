@@ -72,7 +72,15 @@ public class Puesto {
         
         return "Puesto: "+this.getNumero()
             +"\nEstado: "+this.getEstado()
+<<<<<<< HEAD
             +"\nPlaca del vehiculo: "+this.getCarro().getPlaca()
             +"\nHora: "+this.getCarro().getHora()+":"+this.getCarro().getMinuto();
+=======
+            +"\nPlaca del carro: "+this.getCarro().getPlaca()
+            +"\nPlaca del carro: "+this.getMoto().getPlaca()
+            +"\nHora: "+this.getCarro().getHora()+":"+this.getCarro().getMinuto();
+            +"\nHora: "+this.getCarro().getHora()+":"+this.getMoto().getMinuto();
+            +"\nHora: "+this.getCarro().getHora()+":"+this.getBicicleta().getMinuto();
+>>>>>>> parent of 74a8bfa... a medio terminar
     }
 }

@@ -5,75 +5,50 @@ package laboratorio3;
  */
 import laboratorio3.Carro;
 import java.util.ArrayList;
-import laboratorio3.Puesto;
-import presentacion.Ventana;
+import negocio.Puesto;
 
 public class Parqueadero {
     ArrayList<Puesto> Puesto;
     ArrayList<Carro> Carro;
-    ArrayList<Moto> Moto;
-    ArrayList<Bicicleta> Bicicleta;
-    
     private int tarifaHora;
     private int tarifaFraccion;
     private int totalRecaudado;
     
-    int CantidadCarros;
-    int CantidadMotos;
-    int CantidadBicicletas;
-    
     public Parqueadero(){
         this.Puesto = new ArrayList<Puesto>();
         this.Carro = new ArrayList<Carro>();
-        this.Moto = new ArrayList<Moto>();
-        this.Bicicleta = new ArrayList<Bicicleta>();
         this.crearPuestos();
-        
-        CantidadCarros = this.Carro.size();
-        CantidadMotos = this.Moto.size();
-        CantidadBicicletas = this.Bicicleta.size();
     }
     
     private void crearPuestos(){
-        for(int i=0; i<25; i++){
-            if(CantidadCarros < 12 ){
-                this.Puesto.add(new Puesto(i+1));
-            } else {
-                Ventana.imp("No hay puestos para parquear más carros");
-                return;
-            }
-            if(CantidadMotos < 8 ){
-                this.Puesto.add(new Puesto(i+1));
-            } else {
-                Ventana.imp("No hay puestos para parquear más motos");
-                return;
-            }
-            if(CantidadBicicletas < 6 ){
-                this.Puesto.add(new Puesto(i+1));
-            } else {
-                Ventana.imp("No hay puestos para parquear más bicicletas");
-                return;
-            }
-            
-            }
-            
+        for(int i=0; i<4; i++)
+            this.Puesto.add(new Puesto(i+1));
     }
     
     //-----------------------REQUERIMIENTOS FUNCIONALES-----------------------//
     public String parquearCarro(String placa, String hora, String minuto){
+        String men = "No hay puestos para parquear más carros";
         
         if(this.buscarCarro(placa) != null)
             return "El carro ya esta parqueado en un puesto";
         
+<<<<<<< HEAD
         if(this.puestoVacioc()!=-1){
             Carro carro = new Carro(placa, hora, minuto);
             this.Puesto.get(this.puestoVacioc()).asignarPuestoc(carro);
             this.Puesto.get(this.puestoVacioc()).setEstado("Ocupado");
+=======
+        if(this.puestoVacio()!=-1){
+            Carro Carro = new Carro(placa, hora, minuto);
+            this.Puesto.get(this.puestoVacio()).asignarPuesto(Carro);
+            this.Puesto.get(this.puestoVacio()).setEstado("Ocupado");
+>>>>>>> parent of 74a8bfa... a medio terminar
             return "Carro parqueado con exito";
-        }         
-        return null;
-        
-   }
+        }
+            
+        return men;
+    }
+    
     public String retirarCarro(String placa, String hora, String minutos){
         String mensaje = "No se ha podido retirar el carro";
         
@@ -90,6 +65,7 @@ public class Parqueadero {
         return mensaje;
     }
     
+<<<<<<< HEAD
     public String parquearMoto(String Placam, String horam, String minutom){
         
         if(this.buscarMoto(Placam) != null)
@@ -154,6 +130,8 @@ public class Parqueadero {
         return mensaje;
     }
     
+=======
+>>>>>>> parent of 74a8bfa... a medio terminar
     public String InfoPuestosLibres(){
         String libres = "";
         
@@ -176,6 +154,7 @@ public class Parqueadero {
         return carro;
     }
     
+<<<<<<< HEAD
     public int puestoVacioc(){
         for(Puesto p: Puesto)
             if(p.getEstado().equalsIgnoreCase("Libre"))
@@ -195,6 +174,9 @@ public class Parqueadero {
         return moto;
     }
         public int puestoVaciom(){
+=======
+    public int puestoVacio(){
+>>>>>>> parent of 74a8bfa... a medio terminar
         for(Puesto p: Puesto)
             if(p.getEstado().equalsIgnoreCase("Libre"))
                 return (p.getNumero()-1);
@@ -202,6 +184,7 @@ public class Parqueadero {
         return -1;
     }
     
+<<<<<<< HEAD
         public Bicicleta buscarBicicleta(String NUMERO){
         Bicicleta bicicleta = null;
         
@@ -222,6 +205,9 @@ public class Parqueadero {
     }
     
     public int calcularPrecio(String horaSalida, String minutoSalida, Carro carro){
+=======
+    public int calcularPrecio(String horaSalida, String minutoSalida, Carro Carro){
+>>>>>>> parent of 74a8bfa... a medio terminar
         int costo = 0;
         
         int cantHoras = Integer.parseInt(horaSalida)-Integer.parseInt(Carro.getHora());
@@ -239,6 +225,7 @@ public class Parqueadero {
         
         return costo;
     }
+<<<<<<< HEAD
     
     public int calcularPrecio(String horaSalida, String minutoSalida, Moto moto){
         int costo = 0;
@@ -277,6 +264,8 @@ public class Parqueadero {
         
         return costo;
     }
+=======
+>>>>>>> parent of 74a8bfa... a medio terminar
 
     public String concatenarPlacasCarros(){
         String carros = "";

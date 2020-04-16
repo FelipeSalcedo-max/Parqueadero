@@ -10,6 +10,7 @@ package laboratorio3;
  * @author RetailAdmin
  */
 public class Bicicleta {
+<<<<<<< HEAD
     private String NUMERO;
     private String horab;
     private String minutob;
@@ -43,5 +44,7 @@ public class Bicicleta {
     public void setMinutob(String minutob) {
         this.minutob = minutob;
     }
+=======
+>>>>>>> parent of 74a8bfa... a medio terminar
     
 }
